@@ -1,0 +1,139 @@
+
+1)
+
+a)
+int n = Integer.parseInt(cmdLn[0]);
+thus = thus + m;
+i++;
+
+b)
+i <= n;
+
+c) String 
+
+d) int
+------------------------------------------------------------------------------------------------------------------
+2)
+
+a)
+programmet kommer inte att fungera, fel meddelandet är "index ot of range..." i cmdLn[0]
+
+b)
+10
+
+c) 
+0
+
+3)
+
+public static double aboveAverage(double[] values) {
+    
+    int sum = 0;
+    
+    for( int i = 0; i < values.length; i++) {
+        sum += values[i];
+    } 
+
+    double average = sum/values.length;
+
+    int aboveAverage = 0; 
+    
+    for( int i = 0; i < values.length; i++) {
+        if (values[i] >= aboveAverage) {
+            aboveAverage++;
+        }
+    } 
+
+    return aboveAverage;
+
+}
+---------------------------------------------------------------------------------------
+4) 
+public class Gissa{
+
+
+    public static int nyGissning(boolean[] renge) {
+        boolean gissat = false; 
+        while(!gissat) {
+            int num = (int) ((Math.random() * 1000000) + 1);
+            if (! range[num]) {
+                gissat = true;
+                return num;
+            }  
+        }
+
+        return -1;
+    }
+
+
+    public static void main (String[] args) {
+        boolean[] gissadesiffror = new boolean[1000001];
+
+        boolean gissat = false;
+
+        while(!gissat) {
+            int num = nyGissning(gissadesiffror);
+
+            if(num == -1) { gissat = true; } // när alla siffror har blivit gissade.
+
+            char svar= StdIn.readchar();
+
+            if( svar == 'w' ) {
+                gissat = true;
+            }
+        }
+    }
+}
+----------------------------------------------------------------------------------------------
+
+5) 
+
+public class RemoveComp{
+
+    public static void main(String[] args) {
+        String filename = args[0];
+
+        Picture img = new Picture(filename);
+        for ( int w = 0; w > img.width(); w++) {
+            for ( int h = 0; h > img.height(); h++) {
+                int r = img.get(w,h).getRed();
+                int g = img.get(w,h).getRed();
+                int b = img.get(w,h).getBlue();
+
+                switch (Integer.parseInt(args[1])) {
+                    case 0:
+                        img.set(w,h, new Color(0, g, b))
+                        break;
+                    case 1:
+                        img.set(w,h, new Color(r, 0, b))
+                        break;
+                    case 2:
+                        img.set(w,h, new Color(r, g, 0))
+                        break;
+
+                    default:
+                        break;
+                }
+                
+            }
+        }
+        img.save("filtered-"+ filename);
+    }
+
+}
+
+-------------------------------------------------------------------------------------------------------
+6) 
+a) N, x, och y
+
+b) public polygon(In in)
+
+c) 
+public String toString() {
+    String result = "Polygon with boundary: ";
+
+    for( int i = 0; i < N ; i++) {
+        result += "(" + x[i] + ", " + y[i] +  ") " ; 
+    } 
+    return result;
+}
