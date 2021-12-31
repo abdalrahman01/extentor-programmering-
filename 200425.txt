@@ -58,5 +58,39 @@ public static Frame{
                 img.set(i, j, Color.black); 
             }
         }
+
+        // bottom
+        for(int i = 0; i < width; i++) {
+            for(int j = 0; j< w; j++) {
+                img.set(i, height - 1 - j, Color.black); 
+            }
+        }
+
+        //left side 
+        for(int i = 0; i < height; i++) {
+            for(int j = 0; j< w; j++) {
+                img.set(j, i, Color.black); 
+            }
+        }
+        
+        // right side
+        for(int i = 0; i < height; i++) {
+            for(int j = 0; j< w; j++) {
+                img.set(width - 1 - j, i, Color.black); 
+            }
+        }
+
+        img.save("frame" + filename);
     }
+}
+---------------------------------------------------------------------
+6)
+a) Ballon b = new Ballon(0,0,50);
+b) public void blowUp() {
+    rad += 10;
+}
+
+c)
+public void fly(double step){
+    x+=step;
 }
