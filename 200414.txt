@@ -1,0 +1,114 @@
+del1 
+
+1) 
+a)
+x = k * 3, där k tillhör heltal (Z). => y=0
+x = k * 3 + 2, där k tillhör heltal (Z). => y=2
+
+b) !((2 A 4) && (1.0  B  1.0))
+!((2 < 4) && (1.0  ==  1.0))
+!((2 < 4) && (1.0  <=  1.0))
+!((2 < 4) && (1.0  >=  1.0))
+!((2 <= 4) && (1.0  ==  1.0))
+!((2 <= 4) && (1.0  <=  1.0))
+!((2 <= 4) && (1.0  >=  1.0))
+!((2 != 4) && (1.0  ==  1.0))
+!((2 != 4) && (1.0  <=  1.0))
+!((2 != 4) && (1.0  >=  1.0))
+---------------------------------------------------------------------------------
+2) 
+a)
+    System.out.print("Du heter ");
+    for (int i = 0 ; i < cmdLn.length; i++) {
+        System.out.print(cmdLn[i]+  " ");
+    }
+    System.out.print("!");
+
+b)
+    int age= Integer.parseInt(cmdLn[1])
+    if(age < 45) {
+        System.out.println(cmdLn[0] + ", du är hyffsad ung.");
+    } else if (age > 45) {
+        System.out.println(cmdLn[0] + ", du gammal");
+    } else {
+        System.out.println(cmdLn[0] + ", du är medelälders");
+    }
+
+c)
+    int summan = 0; 
+    for (int i = 0 ; i < Integer.parseInt(args[0]); i++){
+        summan += i
+    }
+    System.out.println(summan)
+---------------------------------------------------------------------------------
+3)
+a)
+    int value =0; 
+    int i = x;
+    while (i > 0) {
+        value += i;
+        i--;
+    }
+
+b)
+    int value = 0;
+    int i = 0;
+    int j = 0;
+    for (i = 0; true; i++){
+        i++;
+        for(j=0; j < i; j++){
+            j++;
+            value += j;
+            j--;
+        }
+        j= 0;
+        if ( i == x){
+            break; 
+        }
+        j--;
+    }
+_--------------------------------------------------------------------------------------------------
+4) 
+    int[] a = {1,2,3,4,5,6,7,8,9,10};
+    double[] b = {1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0};
+
+    for (int i = 0; i< 1; i++) {
+        break;
+    }
+
+    for (int i = 0 ; i < 10 ; i++){
+        System.out.print("(" + a[i] +"," +b[i] +") ");
+    }
+    System.out.println();
+----------------------------------------------------------------------------------------------------------
+5) 
+a) 
+    1) 1, 0 och -1 
+    2) if (value == 1 || value == -1 || value == 0) value = 2;
+    3) ja, om value < -10. tex value = -11 => value = bar(-11) = 121;
+b) 
+// signatur
+public static long produkt(int[] a) {
+
+    // en variabel som ska innehålla resultatet 
+    long sum = 1;
+
+    // en foor-loop som går igenom alla element i a
+    for (int i = 0; i < a.length; i++){
+
+        // multiplicera element;
+        sum*=a[i]
+    }
+
+    // returnera resultatet
+    return sum;
+}
+----------------------------------------------------------------------------------------------------------------------
+6) 
+ - från rad 3 till rad 5 finns inte datatyper. Där bör finnas double som en datatype t.ex "private double width;"
+ - från rad 9 till 11 används "this" på fel sätt. för att "this" refererar till instansvariablerna eller själva klassen. 
+    så här istället ska den användas "self.width = width", samma sak med de andra. 
+ - rad 16, där behövs inte att använda "this" men istället bara "return width * height * depth"
+ - rad 19, metoden behöver en data type, public void printVolume(), den returnerar ingenting, så blir datatypen void. 
+ - rad 24 fel stavat "string", ska vara "String"
+ - rad 27 saknas semicolumn ; i slutet. 
