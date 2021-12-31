@@ -94,3 +94,7 @@ c)
 public void fly(double step){
     x+=step;
 }
+-------------------------------------------------------------------------
+7)
+a) kolla KeyValue.java
+b) kolla filen ./U7B200414.java
