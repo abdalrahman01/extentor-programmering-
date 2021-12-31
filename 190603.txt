@@ -60,7 +60,7 @@ public Greener{
                 g += procent;
                 if (g > 255) g = 255; 
 
-                img.set(i,j, new Color(r, ))
+                img.set(i,j, new Color(r,g,b))
 
             }
         }
@@ -68,4 +68,7 @@ public Greener{
     }
 }
 -------------------------------------------------------
-
+6) 
+a) theValues och norm
+b) Vector v = new Vector({3.0, 4.0})
+c) //inte säker på svaret, förstör inte riktigt frågan. 
