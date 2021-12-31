@@ -56,3 +56,24 @@ public class LongestRun{
         System.out.println("Longenst run: " + length + " consecutive "  + consecutive + ",");
     }
 }
+--------------------------------------------------------------------------------------------------
+5)
+java.awt.Color;
+public class Invert{
+    public static void main(String[] args){
+        String filename = args[0];
+        Picture img = new Picture(filename);
+
+        for (int i = 0 ; i < img.width(); i++){
+            for ( int j = 0; j< img.height(); j++) {
+                int r = 255 - img.get(i,j).getRed;
+                int g = 255 - img.get(i,j).getGreen;
+                int b = 255 - img.get(i,j).getBlue;
+
+                img.set(i,j, new Color(r,g,b));
+            }
+        }
+
+        img.save("inverted"+filename);
+    }
+}
