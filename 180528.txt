@@ -1,0 +1,48 @@
+1)
+
+a) in.ReadDouble();
+b) i < N;
+c) Polygon
+d) String
+----------------------------------------
+2) 
+a) programmet fortsätter inte pga index out of range i "args[0]"
+b) *...**..********..***...*
+------------------------------------------------------
+3)
+
+public static double[][] trasnpose(double[][] matrix){
+    int rows = matrix.length; 
+    int cols = matrix[0].length;
+
+    double[][] newMatrix = new double[clos][rows];
+    for( int i = 0; i < rows; i++) {
+        for (int j =0 ; j < cols; j++) {
+            newMatrix[j][i] = matrix[i][j];
+        }
+    }
+    return newMatrix;
+}
+---------------------------------------------------------------
+4) 
+java.util.Scanner;
+
+public class LongestRun{
+    public static void main(String[] args){
+        Scanner data = new Scanner(System.in);
+        int[] 
+        int consecutive = data.nextInt;
+        int length = 1;
+
+        while(data.hasNextInt()){
+            int nextInt =data.nextInt(); 
+            if ( nextInt == consecutive) {
+                length ++;
+            } 
+            else {
+                consecutive = nextInt;
+                length = 1;  
+            }
+        }
+    }
+}
