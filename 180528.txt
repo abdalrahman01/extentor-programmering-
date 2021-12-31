@@ -30,7 +30,7 @@ java.util.Scanner;
 public class LongestRun{
     public static void main(String[] args){
         Scanner data = new Scanner(System.in);
-        int[] 
+        int[] seenInteger = new int[Integer.MAX_VALUE];
         int consecutive = data.nextInt;
         int length = 1;
 
@@ -40,9 +40,19 @@ public class LongestRun{
                 length ++;
             } 
             else {
+                seenInteger[nextInt] = length;
                 consecutive = nextInt;
                 length = 1;  
             }
         }
+
+        for(int i = 0; i <  seenInteger.length; i++) {
+            if (seenInteger[i] > length) {
+                length = seenInteger[i]
+                consecutive = i;
+            }
+        }
+
+        System.out.println("Longenst run: " + length + " consecutive "  + consecutive + ",");
     }
 }
