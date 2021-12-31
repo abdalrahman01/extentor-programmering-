@@ -1,0 +1,62 @@
+1)
+a) i++
+b) t<t
+c) String;
+d) int;
+------------------------------------
+2) 
+a) kommer inte att fortsätta köra för att (index out of range)
+b) 100
+c) 1500
+-------------------------------------------------------------
+3)
+public static int[] rangeFilter(int[] a, int low, int high){
+    int length = 0;
+    for(int i =0; i < a.length; i++) {
+        if ( a[i] <= high && a[i] >= low){
+            length++;
+        }
+    }
+    int[] filterd = new int[length];
+    int j= 0;
+    for(int i =0; i < a.length; i++) {
+        if ( a[i] <= high && a[i] >= low){
+            filterd[j] = a[i];
+            j++;
+        }
+    }
+} 
+-----------------------------------------------------
+4)
+public class Kvadratrot{
+    public static void main(String[] args) {
+        double x = Double.parseDouble(args[0]);
+
+        double g = x;
+
+        bool vilkor = Math.abs(g*g - x) > g * 10e-15;
+        while(! vilkor){
+            g = (x + (g/x))/2;
+        }
+        System.out.println(g);
+    }
+}
+-------------------------------------------------
+5) 
+public static Frame{
+    public static void main(String[] args) {
+        String filename = args[0];
+        int w = Integer.parseInt(args[1]);
+        Picture img = new Picture(filename)
+
+        int width = img.width();
+        int height = img.height();
+
+        // top
+        for(int i = 0; i < width; i++) {
+            for(int j = 0; j< w; j++) {
+                img.set(i, j, Color.black); 
+            }
+        }
+    }
+}
