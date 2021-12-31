@@ -77,3 +77,38 @@ public class Invert{
         img.save("inverted"+filename);
     }
 }
+--------------------------------------------------------------------------------------------------------
+6)
+a) x, y och delta
+b) public Turtle(double x0, double y0, double, delta0)
+c) 
+public class Turtle{
+    private double x;
+    private double y;
+    private double delta;
+    private java.awt.Color color;
+
+    public Turtle(double x0, double y0, double, delta0){
+        x = x0;
+        y = y0;
+        delta = delta0;
+        color = new Color(0,0,0);
+
+    }
+
+    public changeColor(COlor c){
+        color = c;
+        StdDraw.setPenColor(color);
+    }
+
+    public void turnLeft(double d){
+        delta = delta  +d;
+    }
+    public void goForward(double step){
+        double newX = x + step * Math.cos(Math.toRadians(delta));
+        double newy = y+ step * Math.sin(Math.toRadians(delta));
+        StdDraw.line(x,y,newX, newY);
+        StdDraw.show(500);
+
+    }
+}
