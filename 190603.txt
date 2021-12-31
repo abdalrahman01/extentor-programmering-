@@ -1,0 +1,71 @@
+1)
+a) System.out.println(thue);
+b) Integer.parseInt(cmdLn[0])
+    thue  + m 
+    
+c) String 
+
+d) String
+-------------------------------------------------
+2)
+a) 10010110
+b) 3 ggr
+c) "10"
+-------------------------------------------------
+3)
+public static double range(double[] a){
+    double min = a[0];
+    double max = a[1];
+    for (int i = 0 ; i < a.length; i++){
+        if (a[i] < min) {
+            min = a[i]
+        } 
+        else if (a[i] > max) {
+            max = a[i]
+        }
+    }
+    return max - min;
+}
+---------------------------------------------------
+4) 
+public class Collats{
+    public static void main(String args[]){
+        int N = Integer.parseInt(args[0]) 
+        while(N  !=  1) {
+            if ( (n % 2 == 0)) {
+                N = N / 2;
+            } else {
+                N = N*3 +1 ; 
+            }
+            System.out.print(N + ", ");
+
+        }
+        System.out.print(M);
+    }
+}
+-------------------------------------------------------
+5) 
+import java.awt.Color;
+public Greener{
+    public static void main(String[] args) {
+        String filename = args[0];
+        int procent = Integer.parseInt(args[1]);
+        Picture img = new Picture(filename);
+        for (int i = 0; i< img.width(); i++){
+            for (int j = 0; j < img.height(); j++){
+                int r = img.get(i,j).getRed();
+                int g = img.get(i,j).getGreen();
+                int b = img.get(i,j).getBlue();
+
+                g += procent;
+                if (g > 255) g = 255; 
+
+                img.set(i,j, new Color(r, ))
+
+            }
+        }
+        img.save("greener"+filename);
+    }
+}
+-------------------------------------------------------
+
