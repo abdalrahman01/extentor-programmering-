@@ -1,0 +1,32 @@
+1)
+a)
+ - Rad 1 kompilerar med typen int och typen double 
+   rad 1 och rad 2 kompilerar med typen int
+ - a blir 0 då b/9 är mindre än 0.02, dvs då b = 0 , för att (int) (0.98 + 0)  = 0
+   1 <= b <= 9 medför a = 1
+   10 <= b <= 18 medför a = 2
+ - för att 3 <= b <= 9 medför a = 1, och (b + 9) % 12 = b - 3 
+            tecknet måste vara lika med +3
+b) (3 A 2) || (3 B 4) || (3.0 B 3.0)
+    
+    (3 == 2) || (3 > 4) || (3.0 > 3.0)
+    (3 < 2) || (3 > 4) || (3.0 > 3.0)
+-----------------------------------------------------------
+2) 
+
+public class U2210607 {
+    public static void main(String[] args) {
+        int v = Integer.parseInt(args[0]);
+        int t = Integer.parseInt(args[1]);
+
+        if (v < 0 || t < 0) {
+            System.out.println("please! only positive integers!");
+        } else {
+            System.out.println(v * t);
+        }
+    }
+}
+-----------------------------------------------------------------
+3)
+
+
