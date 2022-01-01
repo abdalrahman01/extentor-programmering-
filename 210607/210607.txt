@@ -29,4 +29,72 @@ public class U2210607 {
 -----------------------------------------------------------------
 3)
 
+a)
+    int antal = 0; 
+    int m = n;
+    while(m > 0) {
+        antal ++; 
+        int tal1 = 1;
+        int tal2 = 2;
 
+
+        for(int i = 0; i < antal; i++) {
+            tal2 = tal1 + tal2;
+            tal1 = tal2 - tal1;
+        }
+        System.out.println(tal2);
+        m /= 3;
+
+    }
+b) 
+    3
+    5
+    8
+    13
+
+----------------------------------------------------------------------------------
+4) 
+A: char[][]
+B: '*';
+C: '.';
+D: i == j
+E: i + j ==2 
+F: upperRight[i][j - n/2 - 1] + " "
+G: low[i- low.length +1][j] + " "
+----------------------------------------------------------------------------
+5) 
+a)
+    A: word.substring(0, word.length()/2 + (word.length()%2));
+    B: word.length()/2
+    C: i +word.length()/2 + (word.length()%2)
+    D: !(word2.equals(word)); eller (word2.equals(word)); // för att det finns ett fel i frågan. 
+
+
+b)
+    public static double foo(double[] a) {
+        double max1 = a[0];
+        double max2 = a[1];
+        for (int i = 0; i < a.length; i++) {
+            if(a[i] < 0){
+                System.err.println("please olny positives");
+                return 0;
+            }
+        }
+
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > max1 ) max1 = a[i];
+        }
+        for (int i = 0; i < a.length; i++) {
+
+            if (a[i] > max2  && a[i] != max1) max2 = a[i];
+        }
+        return max1 * max2;
+    }
+----------------------------------------------------------------------
+6)
+ - rader 2--5: instans variablerna ska inte vara statiska, 
+ - metoden computeVolume returnar ett double värde som inte kan konverteras till int. byt signaturen till public double ...
+ - rad 29: felstavat bol1! 
+ - rad 26: input argument String cmdLn bör vara ett fält som String[] cmdLn
+ - rad 22: jag gillar inte den.
+ 
