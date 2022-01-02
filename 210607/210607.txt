@@ -97,4 +97,15 @@ b)
  - rad 29: felstavat bol1! 
  - rad 26: input argument String cmdLn bör vara ett fält som String[] cmdLn
  - rad 22: jag gillar inte den.
- 
+--------------------------------------------------------------------------------------
+
+del 2)
+
+2.1)
+
+a) kolla filen Boll.java
+b) metoden public void bounce(double dt) i filen Boll.java är ett försök för att lösa uppgiften, men språket i uppgift var 
+dåligt och svårt att förstå.  
+-----------------------------------------------------------------------------------------------------
+2.2) 
+Den uppgiften är den samma som finns i tentan 200425. kolla där!
