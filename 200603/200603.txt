@@ -1,0 +1,103 @@
+1)
+a)
+    rad 10: rest = rest % 100;
+    rad 12: rest = rest % 50;
+    rad 14: rest = rest % 20; 
+    rad 15: int antal_enkronor = rest;
+
+b) 
+    (2 A 4) || (3.0 B 3.0)
+    (2 > 4) || (3.0 != 3.0)
+    (2 > 4) || (3.0 < 3.0)
+    (2 > 4) || (3.0 > 3.0)
+    (2 == 4) || (3.0 != 3.0)
+    (2 == 4) || (3.0 < 3.0)
+    (2 == 4) || (3.0 > 3.0)
+    (2 >= 4) || (3.0 != 3.0)
+    (2 >= 4) || (3.0 < 3.0)
+    (2 >= 4) || (3.0 > 3.0)
+----------------------------------------------------------------------------------
+
+2) 
+    int a = Integer.parseInt(cmdLn[0]);
+    int B = Integer.parseInt(cmdLn[1]);
+
+    if(a<b){
+        System.out.println(a + " är mindre än " + b);
+    } else if (a > b) {
+        System.out.println(a + " är större än " + b);
+    } else {
+        System.out.println(a + " är lika med " + b);
+    }
+----------------------------------------------------------------------------------
+
+3) 
+a)
+    public class uppgift2a{
+        public static void main(String[] cmdLn){
+            int x = Integer.parseInt(cmdLn[0]);
+            int value = 0; 
+            int i = 0;
+            while(i < x) {
+                value += i (i - 1);
+                i+= 2;
+            }
+            System.out.println(value);
+        }
+    }
+
+------------
+3b)
+    i)
+     - första rutan: while (i < 1)
+     - andra rutan: while (true)
+     - tredje rutan: while (i < 1):
+    ii) 
+     - första rutan: for(i = 1;  i< n;i++)
+     - andra rutan: while (j < n)
+     - tredje rutan: for(k = 0; k <= n ; k++)
+
+------------------------------------------
+4)
+A: null;
+B; i < 10;
+C: i++;
+D: print("(" + (i+1) + "," + (double)(i+1) + ")" );
+
+-----------------------------------------------------------------
+5) 
+a)
+    A: word.substring(0, word.length()/2 + (word.length()%2));
+    B: word.length()/2
+    C: i + word.length()/2 + (word.length()%2)
+    D: word
+
+b) 
+    i) foo(var) kommer att returnera var om var > 10, för att det finns en if stats (value > 10) break; om (var=value) > 10, 
+    while loopen avbryts.
+
+    ii) för var >= 3; för att bar(2) returnerar null, detta medför att value inte stiger, samma sak med tal < 2; 
+
+    iii) du kommer att fastna i en while-loop, kolla ii) för förklaring. 
+
+    iv) if( value <= 2 )  return 0;
+--------------------------------------------------------------------------------------------------
+6) 
+ - rad 3: saknas datatyp
+ - rad 4: saknas datatyp
+ - rad 5: saknas datatyp
+ - rad 9: (this) används på ett fel sätt, man tilldelar inte värde till instans vars
+ - rad 10: (this) används på ett fel sätt, man tilldelar inte värde till instans vars
+ - rad 11: (this) används på ett fel sätt, man tilldelar inte värde till instans vars
+ - rad 16: där behövs inte (this)
+ - rad 19: saknas datatyp
+ - rad 24: felstavat "string"
+ - rad 27: saknas ";" i slutet
+
+
+
+
+
+
+
+
